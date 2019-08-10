@@ -1,1 +1,28 @@
-# For people who can't use pytube 
+# Pytubeが急に下のようなエラーで使えなくなった方へ...
+
+```
+regex pattern ((?:v=|\/)([0-9A-Za-z_-]{11}).*) had zero matches
+```
+
+```
+KeyError 's'
+```
+
+これらのエラーは`mixins.py`というファイルが悪さしています。
+
+# 使用方法
+`mixins.py`をこのGitの``mixins.py``で上書きするだけ。
+インストール場所はOSによって違います。
+
+【宣伝】pytubeの使いかたは[ここ](https://qiita.com/Cyber_Hacnosuke/items/d722eae05d6f7c41a9b7)まで。
+
+# お断り
+このエラーとその対応方法は2019年5月時点で有効でした。今は有効かどうか、またエラーが修正されているかどうかは確認していません。*必ずバックアップを取ってください。*おかしいと感じたらすぐにインストールしなおしてください。
+
+```
+$ pip uninstall pytube
+$ pip install pytube
+```
+
+# その他
+このファイルは僕の平穏な生活を妨げない限り、自由に使ってもらって構いません。
